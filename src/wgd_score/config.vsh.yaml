@@ -1,0 +1,38 @@
+functionality:
+  name: wgd_score
+  arguments:
+    - name: --matrix
+      type: file
+      required: true
+    - name: --scoring_mask
+      type: file
+      required: true
+    - name: --scores
+      type: file
+      direction: output
+      example: scores.txt.gz
+      required: true
+    - name: --plot
+      type: file
+      direction: output
+      example: plot.pdf
+    - name: --gzip
+      type: boolean_true
+      description: Gzip output files
+    - name: --outliers
+      type: boolean_true
+      description: label outliers on dosage score visualization
+  resources:
+    - type: r_script
+      path: script.R
+    - path: helper.R
+platforms:
+  - type: docker
+    image: rocker/tidyverse:4.2
+    setup:
+      - type: r
+        # this dependency is not actually needed
+        # but is just to demonstrate how the `setup`
+        # variable works.
+        packages: [funkyheatmap]
+  - type: nextflow
