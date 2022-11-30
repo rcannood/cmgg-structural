@@ -148,7 +148,9 @@ thisConfig = processConfig(jsonSlurper.parseText('''{
   "info" : {
     "config" : "/home/rcannood/workspace/cmgg/cmgg-structural/src/wgd_score/config.vsh.yaml",
     "platform" : "nextflow",
-    "viash_version" : "0.6.4"
+    "viash_version" : "0.6.4",
+    "git_commit" : "595fef708a26f03f9965e141d6c07a5c6e6021c2",
+    "git_remote" : "https://github.com/rcannood/cmgg-structural.git"
   }
 }'''))
 

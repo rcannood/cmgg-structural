@@ -133,3 +133,5 @@ info:
   output: "/home/rcannood/workspace/cmgg/cmgg-structural/target/docker/wgd_score"
   executable: "/home/rcannood/workspace/cmgg/cmgg-structural/target/docker/wgd_score/wgd_score"
   viash_version: "0.6.4"
+  git_commit: "595fef708a26f03f9965e141d6c07a5c6e6021c2"
+  git_remote: "https://github.com/rcannood/cmgg-structural.git"
